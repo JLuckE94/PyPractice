@@ -2,9 +2,9 @@ import requests
 
 #organizing by moving code into function/main
 def get_weather_desc_and_temp():
-    api_key = "bf5a0b31211501c27b89497878290576"#Get this from the site youre requesting from
+    api_key = ""#Get this from the site youre requesting from
     city = "Fairfax"#variable made for url link
-    url = "http://api.openweathermap.org/data/2.5/weather?q="+city+"&appid="+api_key+"&units=imperial"#Website
+    url = "http://api.openweathermap.org/data/2.5/weather?q="+city+"&appid="+api_key+"&units=imperial"#Website data
 
     request = requests.get(url)#requesting from url
     json = request.json()#new variable to turn request variable into json
